@@ -1,0 +1,196 @@
+/* styles.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #f8f8f8;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 0;
+  background: #f0f4ff;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Features */
+.features {
+  padding: 4rem 0;
+  background: #fff;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.feature-item {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 6px;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 4rem 0;
+  background: #f6f9fc;
+  text-align: center;
+}
+
+.testimonials .testimonial {
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+/* Pricing */
+.pricing {
+  padding: 4rem 0;
+  background: #fff;
+}
+
+.pricing h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 2rem;
+  border-radius: 8px;
+  min-width: 250px;
+  text-align: center;
+}
+
+.card .price {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.btn-secondary {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #333;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #f8f8f8;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .feature-list,
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
